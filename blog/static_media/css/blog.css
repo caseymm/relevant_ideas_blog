@@ -1,0 +1,90 @@
+body{
+    font-family: 'Helvetica Neue';
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 200;
+}
+
+hr{
+    margin-bottom: 5px;
+}
+
+a, a:link, a:hover, a:visited, a:active{
+    color: #B51818;
+}
+img{
+    width: 40%;
+    margin: 10px;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.container{
+    width:80%;
+    margin: auto;
+}
+
+.header{
+    padding: 20px 0px 0px 0px;
+    top: 0px;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 0 0 8px 5px #999999;
+    -moz-box-shadow: 0 0 8px 5px #999999;
+    box-shadow: 0 0 8px 5px #999999;
+    background-color: #ffffff;
+    opacity: .9;
+}
+
+.title{
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.twitter{
+    font-size: 18px;
+}
+
+.posts{
+    margin-top: 40px;
+}
+
+.title a{
+    text-decoration: none;
+    color: #000000;
+}
+.small{
+    font-size: 12px;
+}
+
+@media screen and (max-width:700px){
+.title{
+    font-size: 40px;
+    font-weight: 100;
+}
+.twitter{
+    font-size: 13px;
+    line-height: 22px;
+}
+img{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+}
+
+@media screen and (max-width:439px){
+.twitter{
+    visibility: hidden;
+}
+}

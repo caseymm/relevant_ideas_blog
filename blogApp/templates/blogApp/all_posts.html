@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load humanize %}
+{% load url from future %}
+
+{% block content %}
+
+        {% for post in posts %}
+        {# Each "player" is a Basketball model object. #}
+          <a href="{{post.id}}"><h1>{{post.title}}</h1></a>
+          <hr>
+          {{post.content | safe}}
+                
+        {% endfor %}
+             
+
+{% endblock %}

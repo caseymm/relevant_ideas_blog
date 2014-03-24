@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    
+{% load humanize %}
+{% load url from future %}
+
+<html lang=en>
+<head>
+    <title>{% block title %}Relevant Ideas{% endblock %}</title>
+    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/blog.css" rel="stylesheet">
+        
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+        
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <span class="title">
+                <a href="{% url 'blogApp_home' %}">Relevant Ideas</a>
+            </span>
+            <p class="twitter right"><a href="http://twitter.com/caseymmiller" target="blank">@caseymmiller</a></p>
+        </div>
+    </div>
+    <div class="container posts">
+        
+        <br>
+                       
+        {% block content %}
+           
+        {% endblock %}
+        
+    </div>
+    
+</body>
+</html>
